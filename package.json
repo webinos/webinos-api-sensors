@@ -1,4 +1,4 @@
-{ "name": "sensors"
+{ "name": "webinos-api-sensors"
 , "publishConfig": { "tag": "alpha" }
 , "description": "Sensors API"
 , "keywords": [ "webinos", "sensors", "API"]
