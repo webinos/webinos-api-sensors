@@ -4,7 +4,7 @@
 , "keywords": [ "webinos", "sensors", "API"]
 , "version": "0.0.1"
 , "homepage": "http://webinos.org/"
-, "author": "Andre Paul <andre.paul@fokus.fraunhofer.de>"
+, "author": "Giuseppe La Torre <giuseppe.latorre@dieei.unict.it>"
 , "repository":
   { "type": "git"
   , "url": "https://github.com/webinos/webinos-api-sensors.git"
