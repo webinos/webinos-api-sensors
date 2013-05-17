@@ -1,4 +1,6 @@
 {
-  "name": "sensors",
-  "params": {}
+  "params": 
+    {
+        "drivers" : [ "webinos-driver-arduino" ]
+    }
 }
