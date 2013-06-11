@@ -74,7 +74,7 @@
 
     Sensor.prototype.addEventListener = function(eventType, eventHandler, capture) {
         var rpc = webinos.rpcHandler.createRPC(this, "addEventListener", eventType);
-        sensorListeners.push([rpc.id, eventHandler]);
+        sensorListeners.push([rpc.id, eventHandler, this.id]);
         rpc.onEvent = function (sensorEvent) {
             eventHandler(sensorEvent);
         };
@@ -84,7 +84,8 @@
 
     Sensor.prototype.removeEventListener = function(eventType, eventHandler, capture) {
         for (var i = 0; i < sensorListeners.length; i++) {
-            if (sensorListeners[i][1] == eventHandler) {
+            if (sensorListeners[i][1] == eventHandler && sensorListeners[i][2] == this.id) {
+                //alert(sensorListeners[i][0]);
                 var arguments = new Array();
                 arguments[0] = sensorListeners[i][0];
                 arguments[1] = eventType;

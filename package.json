@@ -21,7 +21,7 @@
   }
 , "devDependencies":
   {
-	"webinos-jsonrpc2" : "*"
+    "webinos-jsonrpc2" : "*"
   }
 , "bundleDependencies":
   [
